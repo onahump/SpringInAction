@@ -1,7 +1,7 @@
 package com.makingdevs.com
 
 import com.makingdevs.com.User
-import com.makingdevs,com.UserRepository
+import com.makingdevs.com.UserRepository
 
 @Controller
 @RequestMapping(path="demo")
