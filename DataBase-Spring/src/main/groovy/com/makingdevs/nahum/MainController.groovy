@@ -1,4 +1,4 @@
-package com.makingdevs.com
+package com.makingdevs.nahum
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
 
-import com.makingdevs.com.User
-import com.makingdevs.com.UserRepository
+import com.makingdevs.nahum.User
+import com.makingdevs.nahum.UserRepository
 
 @Controller
 @RequestMapping(path="demo")
@@ -22,12 +22,12 @@ public class MainController{
 
 		User n = new User(name:name,
 						  email:email)
-		n.userRepository.save(n)
+		userRepository.save(n)
 		return "Saved"
 	}
 
 	@GetMapping(path="/all")
-	public @ResponseBody Iterable<User> getAllUsers(){
-		userRepository.findAll()
+	public @ResponseBody Iterable<User> getAllUsers() {
+		return userRepository.findAll()
 	}
 }
