@@ -2,33 +2,44 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
 
-    <title>Spring Framework Guru</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>HAMP</title>
+     
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          th:href="@{/webjars/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css}"
-          rel="stylesheet"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-          crossorigin="anonymous" />
-
-    <link href="https://v4-alpha.getbootstrap.com/examples/cover/cover.css"
-          th:href="@{/webjars/examples/cover/cover.css}"
-          rel="stylesheet" media="screen" />
-
-    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
-            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
-
+    <link href="/css/style.css" rel="stylesheet" media="screen" />
+ 
 </head>
 <body>
 
 <div class="container">
-    <div class="jumbotron">
-        <h1 align="center">Welcome to the Making Devs Facturation Centre</h1>
-        <img src="../static/img/Logo-Makingdevs.png" width="300" align="centre"
-             th:src="@{img/Logo-Makingdevs.png}"/>
-        <h2>Fellow Spring Framework Gurus!!!</h2>
-    </div>
-</div>
 
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Inicio</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/products">Lista Productos</a></li>
+                        <li><a href="/product/new">Nuevo Producto</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="">
+                    <title>Making Devs</title>
+
+                    <h3>Sistema de Facturacion de MakingDevs</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <img src="/img/Logo-Makingdevs.png" width="300" />
+            </div>
+        </div>
+
+</div>
 </body>
 </html>
