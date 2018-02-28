@@ -17,7 +17,7 @@ public class AddressController{
     private AddressService addressService
 
     @RequestMapping(value = "/addresses", method = RequestMethod.GET)
-    public String list(Model model){
+    String list(Model model){
         model.addAttribute("addresses", addressService.listAllAddresses())
         "Addresses"
     }
@@ -27,7 +27,5 @@ public class AddressController{
         model.addAttribute("address",addressService.getAddressById())
         "addressShow"
     }
-
-
 
 }
