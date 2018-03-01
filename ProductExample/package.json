@@ -1,15 +1,12 @@
 {
-  "name": "invoice",
+  "name": "facturacion",
   "version": "1.0.0",
-  "description": "creating my first npm ",
+  "description": "my first npm",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onahump/SpringInAction.git"
-  },
+  "repository": "git+https://github.com/onahump/SpringInAction.git",
   "author": "onahump <oswaldo@makindevs.com>",
   "license": "MIT",
   "bugs": {
