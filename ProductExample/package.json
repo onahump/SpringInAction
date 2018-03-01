@@ -1,0 +1,9 @@
+{
+  "name": "facturacion",
+  "version": "1.0.0",
+  "description": "my first yarn",
+  "main": "index.js",
+  "repository": "https://github.com/onahump/SpringInAction",
+  "author": "onahump",
+  "license": "MIT"
+}
