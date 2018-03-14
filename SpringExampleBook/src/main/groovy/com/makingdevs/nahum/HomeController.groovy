@@ -18,5 +18,6 @@ class HomeController{
 		/* http://localhost:8080?name=Greg
 		   Si el nombre es igual a "" entonce imprime "Hey!" 
 		   si el nombre con valor entonces "Hey, <<nombre>>!"
+		*/
 	}
 }
